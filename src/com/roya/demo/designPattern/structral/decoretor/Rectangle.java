@@ -1,4 +1,4 @@
-package com.roya.demo.designPattern.decoretor;
+package com.roya.demo.designPattern.structral.decoretor;
 
 public class Rectangle implements Shape {
     @Override
