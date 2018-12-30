@@ -1,4 +1,4 @@
-package com.roya.demo.designPattern.proxy;
+package com.roya.demo.designPattern.structral.proxy;
 
 public class Source implements ISource {
     @Override

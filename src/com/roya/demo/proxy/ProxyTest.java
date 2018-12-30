@@ -1,7 +1,5 @@
 package com.roya.demo.proxy;
 
-import com.roya.demo.designPattern.proxy.Source;
-
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
