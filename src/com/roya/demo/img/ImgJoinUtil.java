@@ -92,14 +92,19 @@ public class ImgJoinUtil {
                     int strHeight = graphics2D.getFontMetrics().getHeight();
 
                     //得到文字的长度
-                    int max_length = FontUtil.getStringLength(font, textBean.getText());
+                    int maxLength = FontUtil.getStringLength(font, textBean.getText());
                     //判断是否控制了文字长度
-                    if (textBean.getMax_width() > 0 && max_length > textBean.getMax_width()) {
+                    if (textBean.getMax_width() > 0 && maxLength > textBean.getMax_width()) {
 
-                        //初始高度
-                        int inity = Math.max(textBean.getTop() - 20, 0);
                         //循环得到字符串的长度
                         String newStr = textBean.getText();
+
+                        //计算增加了几行
+                        int addLines = maxLength/textBean.getMax_width();
+                        //重新设置坐标
+                        textBean.setTop(textBean.getTop()-addLines*strHeight/2);
+                        //初始高度
+                        int inity = textBean.getTop();
 
 
                         //如果不是最后的长度
