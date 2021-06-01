@@ -97,7 +97,7 @@ public class ImgJoinUtil {
                     if (textBean.getMax_width() > 0 && max_length > textBean.getMax_width()) {
 
                         //初始高度
-                        int inity = textBean.getTop();
+                        int inity = Math.max(textBean.getTop() - 20, 0);
                         //循环得到字符串的长度
                         String newStr = textBean.getText();
 

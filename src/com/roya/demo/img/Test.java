@@ -41,8 +41,9 @@ public class Test {
             //文字
             TextBean pNameBean = new TextBean();
             pNameBean.setText("幻想家·哑面磨砂啄木嘴 玻璃内胆保温壶");
+//            pNameBean.setText("幻想家·哑面");
             pNameBean.setLeft(16*multi);
-            pNameBean.setTop(355*multi);
+            pNameBean.setTop(365*multi);
             pNameBean.setMax_width(182*multi);
             Font pNameFont = new Font("PingFang SC Regular", Font.PLAIN, 16*multi);
             pNameBean.setFont(pNameFont);
