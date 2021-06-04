@@ -6,6 +6,6 @@ package com.roya.demo.classloading;
 public class SubClass extends SupperClass {
 
     static {
-        System.out.println("sub class init~~~");
+        System.out.println("========sub class init=========");
     }
 }

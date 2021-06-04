@@ -7,7 +7,7 @@ package com.roya.demo.classloading;
 public class SupperClass {
 
     static {
-        System.out.println("supper class init~~~");
+        System.out.println("=========supper class init=======");
     }
 
     public static String staticValue = "static Value";
