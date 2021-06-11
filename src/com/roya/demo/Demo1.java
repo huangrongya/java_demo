@@ -26,15 +26,6 @@ public class Demo1 {
 //
 //        System.out.println(sumHeight());
 //
-//        String s = "4JDVEKOTLI430678VI_2020-08-10-19-22-01_2020-08-10-19-32-10";
-//        String s1 = "1400357924_1813_product_2020-08-10-15-30-31_2020-08-10-16-00-44";
-//        System.out.println(s.substring(0,18));
-//        System.out.println(s1.substring(0,s1.indexOf("product")+7));
-//
-//        BigDecimal a = new BigDecimal(-3819);
-//        BigDecimal b = new BigDecimal(99);
-//        BigDecimal c = a.divide(b, 2, RoundingMode.HALF_UP);
-//        System.out.println("-------------"+c);
 
 
 
