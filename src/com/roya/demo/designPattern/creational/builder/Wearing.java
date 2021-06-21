@@ -1,5 +1,8 @@
 package com.roya.demo.designPattern.creational.builder;
 
+/**
+ * @author royle
+ */
 public class Wearing {
     private String cloth;
     private String pants;
