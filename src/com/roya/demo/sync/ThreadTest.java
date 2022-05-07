@@ -5,14 +5,14 @@ import java.util.concurrent.FutureTask;
 public class ThreadTest {
 
     public static void main(String[] args) throws Exception {
-        MyCallable callable = new MyCallable();
+        MyThread thread = new MyThread();
+        MyCallable callable = new MyCallable(thread);
         FutureTask<String> ft = new FutureTask<>(callable);
         Thread t1 = new Thread(ft);
 
         MyRunnable runnable = new MyRunnable();
         Thread t2 = new Thread(runnable);
 
-        MyThread thread = new MyThread();
         Thread t3 = new Thread(thread);
         t1.start();
         t2.start();
